@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー — 運動プランボード</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { margin: 0 auto; max-width: 680px; padding: 32px 20px 80px; line-height: 1.7;
+    font-family: -apple-system, "Apple SD Gothic Neo", Pretendard, sans-serif; color: #111; background: #fafafa; }
+  @media (prefers-color-scheme: dark) { body { color: #eee; background: #111; } }
+  h1 { font-size: 24px; } h2 { font-size: 17px; margin-top: 28px; }
+  p, li { font-size: 14.5px; } .meta { font-size: 13px; opacity: 0.6; }
+
+  nav { font-size: 13px; margin-bottom: 8px; } nav a { color: inherit; opacity: 0.55; margin-right: 10px; text-decoration: none; } nav a.on { opacity: 1; font-weight: 600; }
+</style>
+</head>
+<body>
+<nav><a href="./index.html">한국어</a><a href="./en.html">English</a><a href="./ja.html" class="on">日本語</a><a href="./zh.html">简体中文</a></nav>
+<h1>プライバシーポリシー</h1>
+<p class="meta">運動プランボード・施行日 2026-09-27</p>
+
+<p>運動プランボード(以下「本アプリ」)は、利用者の個人情報を大切に扱い、以下のとおり取り扱います。</p>
+
+<h2>1. 収集する情報</h2>
+<ul>
+  <li><b>アカウント情報(任意)</b> — クラウド同期(プロ機能)のためにログインした場合のみ:メールアドレス、ソーシャルログインの識別子(Google/Kakao/Apple が提供する ID)</li>
+  <li><b>運動データ</b> — 利用者が入力した運動の種類、週間プラン、起床・勤務時間の設定、日々の記録</li>
+  <li><b>ロック画面通知の情報(チェックポイント通知をオンにした場合)</b> — Apple が発行するプッシュトークン、本アプリが無作為に作成した端末識別子、今日と明日のロック画面に表示する予定(時刻、やることの名前、案内文)。氏名やメールアドレスなどの身元情報は含まれません。</li>
+  <li><b>アップデートの確認</b> — 本アプリが新しいバージョンを確認する際のバージョン情報(ランタイムバージョン、現在のアップデート ID)</li>
+</ul>
+<p>ログインしない場合、運動データは<b>利用者の端末にのみ保存</b>されます。ただし、チェックポイント通知をオンにすると、本アプリを開かなくてもロック画面ボードが時間どおりに変わるよう、上記のロック画面通知の情報が開発者の運営するサーバーへ送信されます。</p>
+
+<h2>2. 利用目的</h2>
+<ul>
+  <li>アカウントの識別とログインの維持</li>
+  <li>複数の端末間での運動データの同期(ログインした利用者のみ)</li>
+  <li>決まった時刻にロック画面ボード(ライブアクティビティ)を更新する通知の送信 — Apple プッシュ通知サービス(APNs)経由</li>
+  <li>アプリのアップデートの提供</li>
+</ul>
+<p>広告、プロフィールの販売、第三者のマーケティングを目的とした収集・利用は行いません。</p>
+
+<h2>3. 保管と委託</h2>
+<ul>
+  <li><b>クラウド同期データ</b> — Supabase(supabase.com)のインフラに暗号化通信(HTTPS)で保存され、アカウント削除まで保管されます。</li>
+  <li><b>ロック画面通知の情報</b> — 開発者が直接運営するサーバー(大韓民国所在)に保存され、通知は Apple プッシュ通知サービス(APNs)を経由して端末に届きます。過ぎた予定は2日後に、30日間アプリとの接続がない端末の情報は自動的に削除されます。</li>
+  <li><b>サーバーとの接続</b> — 本アプリとサーバー間の通信は暗号化(HTTPS)されており、ネットワークの中継に Tailscale(tailscale.com)を使用しています。接続の過程で IP アドレスなどの一般的な接続情報が処理されることがありますが、別途保存したり他の目的に利用したりしません。</li>
+</ul>
+
+<h2>4. 削除の方法</h2>
+<p>本アプリの<b>設定</b>(アカウントと同期)から、いつでもアカウントとサーバーに保存されたすべてのデータを即時かつ完全に削除できます。ロック画面通知の情報は<b>設定</b>でチェックポイント通知をオフにするとサーバーからすぐに削除され、アプリを削除すると30日後に自動的に削除されます。端末に保存されたデータは、アプリの削除またはブラウザのデータ削除で消去されます。</p>
+
+<h2>5. 第三者への提供</h2>
+<p>法令に基づく要請を除き、個人情報を第三者に提供しません。</p>
+
+<h2>6. お問い合わせ</h2>
+<p>個人情報に関するお問い合わせ:o77151@gmail.com</p>
+
+<p class="meta">本ポリシーを変更する場合は、このページでお知らせします。</p>
+
+</body>
+</html>
