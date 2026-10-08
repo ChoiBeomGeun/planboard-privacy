@@ -28,6 +28,7 @@
   <li><b>Workout data</b> — the to-dos and workouts you enter, weekly plans, wake-up and work hour settings, daily records, and weight entries if you use the cutting plan</li>
   <li><b>Lock Screen alert data (if checkpoint alerts are on)</b> — the push token issued by Apple, a random device identifier created by the App, and the schedule shown on today's and tomorrow's Lock Screen (times, to-do names, short messages). It contains no identity information such as your name or email.</li>
   <li><b>Advertising data (if you are not a Pro user)</b> — collected by Google AdMob, which shows the ads: your device's advertising identifier (on iPhone, only if you allow tracking), IP address and the approximate location derived from it, device, OS and app information, and ad impressions and clicks. The developer does not receive or store this information directly.</li>
+  <li><b>Subscription data (if you subscribe to Planboard Pro)</b> — the product, purchase, renewal and expiry times, and an identifier to check your subscription status (your account ID if you are signed in). Payment methods and card details are handled by Apple and Google; the developer never receives them.</li>
   <li><b>Update checks</b> — app version information (runtime version, current update ID) when the App checks for a new version</li>
 </ul>
 <p>If you don't sign in, your workout data is <b>stored only on your device</b>. However, if checkpoint alerts are on, the Lock Screen alert data above is sent to a server run by the developer so the Lock Screen board can change on time even when the App is closed.</p>
@@ -48,6 +49,7 @@
   <li><b>Google LLC (AdMob)</b> — shows and measures ads. Retention follows Google's policies (<a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a>).</li>
   <li><b>Google LLC (Gmail)</b> — sends email sign-in codes</li>
   <li><b>Apple Inc.</b> — Sign in with Apple and push delivery (APNs)</li>
+  <li><b>RevenueCat, Inc.</b> — managing subscription purchases and renewals (United States)</li>
   <li><b>Lock Screen alert data</b> — stored on a server run by the developer (located in the Republic of Korea — the developer's own server or Supabase's Seoul server). Past schedules are deleted after 2 days, and device information with no contact from the App for 30 days is deleted automatically.</li>
   <li><b>Server connection</b> — connections between the App and the server are encrypted (HTTPS) and relayed through Tailscale (tailscale.com). Ordinary connection information such as IP addresses may be processed in transit, but it is not stored separately or used for other purposes.</li>
 </ul>
@@ -70,7 +72,7 @@
   <li><b>Controller</b> — Beomgeun Choi (individual developer); contact in section 9</li>
   <li><b>Legal bases</b> — account, sync and alerts: providing the service (performance of a contract); personalized ads and the advertising identifier: consent (which you can withdraw anytime); security, service upkeep and non-personalized ads: legitimate interests</li>
   <li><b>Your rights</b> — you can request access, rectification, erasure, restriction, portability, objection and withdrawal of consent, and you can lodge a complaint with the data protection authority in your country.</li>
-  <li><b>International transfers</b> — data is processed in the Republic of Korea (Supabase Seoul servers, the developer's server) and in the United States and other countries (Google, Apple). Each provider applies the safeguards required by law, such as Standard Contractual Clauses.</li>
+  <li><b>International transfers</b> — data is processed in the Republic of Korea (Supabase Seoul servers, the developer's server) and in the United States and other countries (Google, Apple, RevenueCat). Each provider applies the safeguards required by law, such as Standard Contractual Clauses.</li>
 </ul>
 
 <h2>8. Children</h2>
