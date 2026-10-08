@@ -18,42 +18,65 @@
 <body>
 <nav><a href="./index.html">한국어</a><a href="./en.html" class="on">English</a><a href="./ja.html">日本語</a><a href="./zh.html">简体中文</a></nav>
 <h1>Privacy Policy</h1>
-<p class="meta">Workout Planboard · Effective 2026-09-27</p>
+<p class="meta">Workout Planboard · Effective 2026-10-08</p>
 
-<p>Workout Planboard (the "App") handles your personal information with care, as described below.</p>
+<p>Workout Planboard (the "App") values your privacy and handles personal information as follows.</p>
 
 <h2>1. Information we collect</h2>
 <ul>
-  <li><b>Account information (optional)</b> — only when you sign in for cloud sync (Pro): your email address and social sign-in identifier (ID provided by Google/Kakao/Apple)</li>
-  <li><b>Workout data</b> — the workouts, weekly plan, wake-up/work time settings and daily records you enter</li>
-  <li><b>Lock Screen alert data (when checkpoint alerts are on)</b> — the push token issued by Apple, a random device identifier created by the App, and today's and tomorrow's Lock Screen schedule (times, task names, short messages). It contains no identity information such as your name or email.</li>
+  <li><b>Account information (optional)</b> — only when you sign in for cloud sync: your email address (email code sign-in), or your Sign in with Apple identifier and the email address Apple shares (a private relay address if you choose "Hide My Email")</li>
+  <li><b>Workout data</b> — the to-dos and workouts you enter, weekly plans, wake-up and work hour settings, daily records, and weight entries if you use the cutting plan</li>
+  <li><b>Lock Screen alert data (if checkpoint alerts are on)</b> — the push token issued by Apple, a random device identifier created by the App, and the schedule shown on today's and tomorrow's Lock Screen (times, to-do names, short messages). It contains no identity information such as your name or email.</li>
+  <li><b>Advertising data (if you are not a Pro user)</b> — collected by Google AdMob, which shows the ads: your device's advertising identifier (on iPhone, only if you allow tracking), IP address and the approximate location derived from it, device, OS and app information, and ad impressions and clicks. The developer does not receive or store this information directly.</li>
   <li><b>Update checks</b> — app version information (runtime version, current update ID) when the App checks for a new version</li>
 </ul>
-<p>If you don't sign in, your workout data is <b>stored only on your device</b>. However, when checkpoint alerts are on, the Lock Screen alert data above is sent to a server run by the developer so the Lock Screen board can update on time even when the App isn't open.</p>
+<p>If you don't sign in, your workout data is <b>stored only on your device</b>. However, if checkpoint alerts are on, the Lock Screen alert data above is sent to a server run by the developer so the Lock Screen board can change on time even when the App is closed.</p>
 
 <h2>2. How we use it</h2>
 <ul>
-  <li>Identifying your account and keeping you signed in</li>
+  <li>Identifying your account, keeping you signed in, and emailing sign-in codes</li>
   <li>Syncing workout data across devices (signed-in users only)</li>
-  <li>Sending updates that change the Lock Screen board (Live Activity) at the scheduled times — via the Apple Push Notification service (APNs)</li>
+  <li>Sending pushes that update the Lock Screen board (Live Activity) at scheduled times, via the Apple Push Notification service (APNs)</li>
+  <li>Showing ads to users who are not Pro — personalized ads only if you allow them</li>
   <li>Delivering app updates</li>
 </ul>
-<p>We do not collect or use data for advertising, selling profiles, or third-party marketing.</p>
+<p>We do not sell personal information, and the developer does not use it for its own marketing.</p>
 
 <h2>3. Storage and processors</h2>
 <ul>
-  <li><b>Cloud sync data</b> — stored on Supabase (supabase.com) infrastructure over an encrypted connection (HTTPS) and kept until you delete your account.</li>
-  <li><b>Lock Screen alert data</b> — stored on a server run directly by the developer (located in the Republic of Korea); alerts are delivered to your device through the Apple Push Notification service (APNs). Past schedule entries are deleted automatically after 2 days, and data for devices that haven't connected for 30 days is deleted automatically.</li>
-  <li><b>Server connection</b> — the connection between the App and the server is encrypted (HTTPS) and relayed through Tailscale (tailscale.com). Ordinary connection information such as IP addresses may be processed during connection, but it is not separately stored or used for other purposes.</li>
+  <li><b>Supabase Inc.</b> — stores account and cloud sync data. Server location: Seoul, Republic of Korea (AWS ap-northeast-2). Stored over encrypted connections (HTTPS) and kept until you delete your account.</li>
+  <li><b>Google LLC (AdMob)</b> — shows and measures ads. Retention follows Google's policies (<a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a>).</li>
+  <li><b>Google LLC (Gmail)</b> — sends email sign-in codes</li>
+  <li><b>Apple Inc.</b> — Sign in with Apple and push delivery (APNs)</li>
+  <li><b>Lock Screen alert data</b> — stored on a server run by the developer (located in the Republic of Korea). Past schedules are deleted after 2 days, and device information with no contact from the App for 30 days is deleted automatically.</li>
+  <li><b>Server connection</b> — connections between the App and the server are encrypted (HTTPS) and relayed through Tailscale (tailscale.com). Ordinary connection information such as IP addresses may be processed in transit, but it is not stored separately or used for other purposes.</li>
 </ul>
 
-<h2>4. Deleting your data</h2>
-<p>You can delete your account and all data stored on the server immediately and permanently at any time in the App's <b>Settings</b> (account and sync section). Lock Screen alert data is removed from the server as soon as you turn off checkpoint alerts in <b>Settings</b>, and is deleted automatically 30 days after you delete the App. Data stored on your device is removed by deleting the App or clearing browser data.</p>
+<h2>4. Your ad choices</h2>
+<ul>
+  <li><b>iPhone</b> — if you decline the tracking request, your advertising identifier is not used. You can change this anytime in iPhone Settings → Privacy &amp; Security → Tracking.</li>
+  <li><b>European Union, United Kingdom and Switzerland</b> — we ask for your consent before showing the first ad and only show ads within what you agreed to. You can change or withdraw your choice anytime in the App under <b>Settings → About → Ad privacy choices</b>.</li>
+  <li>Pro users don't see ads.</li>
+</ul>
 
-<h2>5. Sharing with third parties</h2>
-<p>We do not provide personal information to third parties except when required by law.</p>
+<h2>5. Deleting your data</h2>
+<p>In the App, <b>Settings → Account &amp; sync → Delete account</b> immediately and permanently deletes your account and all data stored on the server. Lock Screen alert data is removed from the server as soon as you turn off <b>Settings → Notifications → Checkpoint alerts</b>, and automatically 30 days after you delete the App. Data stored on your device is removed with <b>Settings → About → Reset app</b>, by deleting the App, or by clearing browser data.</p>
 
-<h2>6. Contact</h2>
+<h2>6. Sharing with third parties</h2>
+<p>Apart from the processors above and personalized ads you allow, we do not share personal information with third parties except when required by law.</p>
+
+<h2>7. Users in the EU and UK (GDPR)</h2>
+<ul>
+  <li><b>Controller</b> — Beomgeun Choi (individual developer); contact in section 9</li>
+  <li><b>Legal bases</b> — account, sync and alerts: providing the service (performance of a contract); personalized ads and the advertising identifier: consent (which you can withdraw anytime); security, service upkeep and non-personalized ads: legitimate interests</li>
+  <li><b>Your rights</b> — you can request access, rectification, erasure, restriction, portability, objection and withdrawal of consent, and you can lodge a complaint with the data protection authority in your country.</li>
+  <li><b>International transfers</b> — data is processed in the Republic of Korea (Supabase Seoul servers, the developer's server) and in the United States and other countries (Google, Apple). Each provider applies the safeguards required by law, such as Standard Contractual Clauses.</li>
+</ul>
+
+<h2>8. Children</h2>
+<p>The App is not directed to children under 14 (in the EU, under the age set by each country). If we learn that a child's information has been collected, we will delete it without delay.</p>
+
+<h2>9. Contact</h2>
 <p>Privacy inquiries: o77151@gmail.com</p>
 
 <p class="meta">If this policy changes, we will announce it on this page.</p>
